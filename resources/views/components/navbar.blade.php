@@ -3,8 +3,8 @@
         <li><a href="/"><img src="{{ asset('images/logo.png') }}" alt="logo" class="w-36"></a></li>
     </ul>
     <ul class="flex gap-x-4">
-        <li class="hover:underline underline-offset-4 decoration-4 decoration-rose-500"><a href="/">Home</a></li>
-        <li class="hover:underline underline-offset-4 decoration-4 decoration-rose-500"><a href="/blogs">Blogs</a></li>
-        <li class="hover:underline underline-offset-4 decoration-4 decoration-rose-500"><a href="/about">About</a></li>
+        <li><a href="{{ route('home') }}" class="{{ Route::is('home') ? 'text-rose-500 font-bold' : 'hover:underline underline-offset-4 decoration-4 decoration-rose-500' }} ">Home</a></li>
+        <li><a href="{{ route('blogs') }}" class="{{ Route::is('blogs') ? 'text-rose-500 font-bold' : 'hover:underline underline-offset-4 decoration-4 decoration-rose-500' }} ">Blogs</a></li>
+        <li><a href="{{ route('about') }}" class="{{ Route::is('about') ? 'text-rose-500 font-bold' : 'hover:underline underline-offset-4 decoration-4 decoration-rose-500' }} ">About</a></li>
     </ul>
 </nav>
